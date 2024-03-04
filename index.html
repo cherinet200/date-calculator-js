@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Duration Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <meta name="color-scheme" content="light dark" /> -->
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="all">
+        <div id="box">
+            <div id="header">
+                <h2>Duration between two days</h2>
+                <h4>darkMode</h4>
+                <label class="switch">
+                    <input title="input" type="checkbox" onclick="darkMode()" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div id="detail">
+                <div id="div">
+                    <label for="fDate">Start Date:</label>
+                    <input id="fDate" type="date" /><br />
+                    <label for="sDate">End Date:</label>
+                    <input id="sDate" type="date" />
+                </div>
+                <br />
+                <div id="btn">
+                    <button type="button" id="btn1" onClick="Calculate()">
+                        Get difference
+                    </button>
+                    <button type="button" id="btn2" onClick="calculateDate()">
+                        Get difference in day
+                    </button>
+                </div>
+                <h3 id="result"></h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
